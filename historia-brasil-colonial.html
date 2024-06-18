@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="indexx2.css">
+</head>
+<body>
+
+<div class="tabs">
+    <button class="tablinks" onclick="openDifficulty(event, 'Easy')">Fácil</button>
+    <button class="tablinks" onclick="openDifficulty(event, 'Medium')">Médio</button>
+    <button class="tablinks" onclick="openDifficulty(event, 'Hard')">Difícil</button>
+</div>
+
+<div id="Easy" class="tabcontent">
+    <div class="question-wrapper">
+        <div class="question">1. período colonial no Brasil teve início em:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">a. 1530</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">B. 1500 </button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">C. 1600 </button>
+      
+
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">2. No período pré-colonial a atividade econômica que teve maior destaque foi:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A. pau-brasil </button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">B. cana-de-açúcar</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">C. café </button>
+    </div>
+
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">3. A primeira capital do Brasil foi:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A. Rio de Janeiro</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">B. Brasília </button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">C. Salvador</button>
+    </div>
+
+    <div id="easyFeedback" class="feedback"></div>
+</div>
+
+<div id="Medium" class="tabcontent">
+    <div class="question-wrapper">
+        <div class="question">1. O Tratado de Tordesilhas foi um acordo entre:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Medium')">A. Portugal e Espanha</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">B. Portugal e Inglaterra</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">C. França e Portugal</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">2. Oficialmente, a abolição da escravidão no Brasil ocorre através da:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">A.  Lei do Ventre Livre</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">B.  Lei Eusébio de Queirós</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Medium')">C. Lei Áurea</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">3. Ainda na questão anterior, em que ano a lei foi assinada?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Medium')">A. 1888</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">C. 1900</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">B. 1886</button>
+    </div>
+    <div id="mediumFeedback" class="feedback"></div>
+</div>
+
+<div id="Hard" class="tabcontent">
+    <div class="question-wrapper">
+        <div class="question">1. Em 1534, a Coroa portuguesa dividiu o território em 15 partes que ficaram conhecidos como:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. Sesmarias</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">B. Tratado de Tordesilhas</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">C. capitanias hereditárias</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">2. O período chamado de Brasil colônia terminou com o:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">A. Elevação do Brasil a Reino Unido</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">B. Leis abolicionistas</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. Tratado de Madrid</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">3. No período do Brasil colonial, outros países que invadiram as terras foram:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. Inglaterra e França </button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">B. França e Holanda</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. Holanda e Espanha</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">4. (UEL) No Brasil colônia, a pecuária teve um papel decisivo na:</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. ocupação das áreas litorâneas</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">B.  expansão para o interior</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. fixação do escravo na agricultura</button>
+    </div>
+    <div id="hardFeedback" class="feedback"></div>
+</div>
+<div class="question-wrapper" style="display:none;">
+    <div class="question">5. (UNIP) Após a restauração Portuguesa, ocorrida em 1640:</div>
+    <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. a justiça colonial passou a ser exercida pelos “homens novos”. </button>
+    <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">B. as relações entre Portugal e o Brasil tornaram-se mais liberais;</button>
+    <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">C.  o Pacto Colonial luso enrijeceu-se;</button>
+</div>
+<div id="hardFeedback" class="feedback"></div>
+</div>
+<div class="question-wrapper" style="display:none;">
+    <div class="question">6. </div>
+    <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. </button>
+    <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">B. </button>
+    <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C.</button>
+</div>
+<div id="hardFeedback" class="feedback"></div>
+</div>
+<div class="question-wrapper" style="display:none;">
+    <div class="question">7. </div>
+    <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A.</button>
+    <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">B. </button>
+    <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. </button>
+</div>
+<div id="hardFeedback" class="feedback"></div>
+</div>
+<script>
+    function openDifficulty(evt, difficultyName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(difficultyName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementsByClassName('tablinks')[0].click();
+
+    function checkAnswer(button, correctness, difficulty) {
+        var feedback = document.getElementById(difficulty.toLowerCase() + "Feedback");
+
+        if (correctness === 'correct') {
+            feedback.textContent = "Correto!";
+            feedback.classList.remove("wrong");
+            feedback.classList.add("correct");
+            
+            var currentQuestion = button.parentNode;
+            var nextQuestion = currentQuestion.nextElementSibling;
+
+            if (nextQuestion && nextQuestion.classList.contains('question-wrapper')) {
+                currentQuestion.style.display = 'none';
+                nextQuestion.style.display = 'block';
+            } else {
+                feedback.textContent = "Você completou as perguntas " + difficulty + "!";
+            }
+        } else {
+            feedback.textContent = "Errado!";
+            feedback.classList.remove("correct");
+            feedback.classList.add("wrong");
+        }
+
+        feedback.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

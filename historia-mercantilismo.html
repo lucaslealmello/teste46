@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="indexx3.css">
+</head>
+<body>
+
+<div class="tabs">
+    <button class="tablinks" onclick="openDifficulty(event, 'Easy')">Fácil</button>
+    <button class="tablinks" onclick="openDifficulty(event, 'Medium')">Médio</button>
+    <button class="tablinks" onclick="openDifficulty(event, 'Hard')">Difícil</button>
+</div>
+
+<div id="Easy" class="tabcontent">
+    <div class="question-wrapper">
+        <div class="question">1. O que é Massa Polar Antártica?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A. Uma massa de ar quente da África.</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">B. Uma massa de ar frio da Antártica</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">C. Uma corrente marítima do Oceano Antártico.</button>
+
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">2. Quais são as características principais da Massa Polar Antártica?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A. Alta temperatura e alta umidade</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">B. Baixa temperatura e baixa umidade</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">C. Alta pressão e alta umidade</button>
+    </div>
+
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">3. Como a Massa Polar Antártica afeta o clima?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A. Aumentando a incidência de tempestades tropicais</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">B. Provocando ondas de calor</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">C. Causando quedas de temperatura e frentes frias</button>
+    </div>
+
+    <div id="easyFeedback" class="feedback"></div>
+</div>
+
+<div id="Medium" class="tabcontent">
+    <div class="question-wrapper">
+        <div class="question">1. De onde se origina a Massa Polar Antártica?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Medium')">A. Na Antártica</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">B. No Ártico</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">C. Nos trópicos</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">2. Como a Massa Polar Antártica se move ao longo do ano?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">A. Apenas se mantém estacionária sobre a Antártica</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">B. Se move para o Sul durante o verão austral</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Medium')">C. Se desloca para o Norte durante o inverno austral</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">3. Que efeito a Massa Polar Antártica tem sobre o Brasil?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Medium')">A. Pode causar geadas no Sul</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">C. Aumenta a temperatura no Nordeste</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Medium')">B. Provoca chuvas na Amazônia</button>
+    </div>
+    <div id="mediumFeedback" class="feedback"></div>
+</div>
+
+<div id="Hard" class="tabcontent">
+    <div class="question-wrapper">
+        <div class="question">1. Qual é a influência da Massa Polar Antártica na formação de ciclones extratropicais?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. Ela não influencia na formação de ciclones extratropicais</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">B. Ela dissolve ciclones extratropicais ao aumentar a temperatura</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">C. Ela contribui para a formação de ciclones extratropicais</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">2. Em quais condições a Massa Polar Antártica pode causar neve em regiões mais ao norte?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">A. Quando se encontra uma massa de ar quente e úmida</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">B. Quando a temperatura é superior a 10 graus</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. Quando o ar está extremamente seco</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">3. Qual é o impacto da Massa Polar Antártica nas correntes oceânicas?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. A Massa Polar Antártica não tem impacto nas correntes oceânicas</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">B. Ela pode influenciar a circulação termohalina</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. Ela aquece as correntes oceânicas superficiais</button>
+    </div>
+    <div class="question-wrapper" style="display:none;">
+        <div class="question">4. Como os meteorologistas monitoram a Massa Polar Antártica?</div>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">A. Usando apenas observações de satélites</button>
+        <button class="option-button" onclick="checkAnswer(this, 'correct', 'Hard')">B. Combinando dados de satélites, estações meteorológicas e modelos climáticos</button>
+        <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Hard')">C. Apenas com balões meteorológicos lançados da Antártica</button>
+    </div>
+    <div id="hardFeedback" class="feedback"></div>
+</div>
+
+<script>
+    function openDifficulty(evt, difficultyName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(difficultyName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementsByClassName('tablinks')[0].click();
+
+    function checkAnswer(button, correctness, difficulty) {
+        var feedback = document.getElementById(difficulty.toLowerCase() + "Feedback");
+
+        if (correctness === 'correct') {
+            feedback.textContent = "Correto!";
+            feedback.classList.remove("wrong");
+            feedback.classList.add("correct");
+            
+            var currentQuestion = button.parentNode;
+            var nextQuestion = currentQuestion.nextElementSibling;
+
+            if (nextQuestion && nextQuestion.classList.contains('question-wrapper')) {
+                currentQuestion.style.display = 'none';
+                nextQuestion.style.display = 'block';
+            } else {
+                feedback.textContent = "Você completou as perguntas " + difficulty + "!";
+            }
+        } else {
+            feedback.textContent = "Errado!";
+            feedback.classList.remove("correct");
+            feedback.classList.add("wrong");
+        }
+
+        feedback.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

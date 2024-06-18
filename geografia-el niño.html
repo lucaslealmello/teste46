@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="indexx2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facil</title>
+  
+</head>
+<body>
+
+
+  
+
+
+    <div class="tabs">
+        <button class="tablinks" onclick="openDifficulty(event, 'Easy')">Nível de dificuldade: fácil</button>
+       
+    </div>
+    
+    <div id="Easy" class="tabcontent">
+        <!-- Perguntas da dificuldade Fácil -->
+        <div class="question-wrapper">
+            <div class="question">1. O que é El Niño?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Aquecimento das águas do Pacífico.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Um tipo de vento.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Um fenômeno vulcânico.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Resfriamento das águas do Atlântico.</button>
+        </div>
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">2. Com que frequência ocorre El Niño?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A cada 10 anos.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A cada 20 anos.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">A cada 2 a 7 anos.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">A cada 50 anos.</button>
+        </div>
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">3. Principais efeitos de El Niño?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Erupções vulcânicas.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Tsunamis.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Terremotos.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Secas e inundações.</button>
+        </div>
+
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">4. Como El Niño é monitorado?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Satélites e bóias.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Telescópios.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Radares de aviões.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Submarinos.</button>
+        </div>
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">5. Diferença entre El Niño e La Niña?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">El Niño aquece, La Niña resfria.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">El Niño resfria, La Niña aquece.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Ambos são a mesma coisa.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">El Niño causa secas, La Niña inundações.</button>
+        </div>
+
+      
+        
+
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">6. Regiões mais afetadas por El Niño?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Costa oeste das Américas.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Norte da Europa.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Sul da África.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Leste do Canadá.</button>
+        </div>
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">7. Impacto na pesca?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Aumento da população de peixes.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Menos nutrientes.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Não afeta a pesca.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Melhora a qualidade da água.</button>
+        </div>
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">8. Evento intenso?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">1950-1951.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">1997-1998.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">1980-1981.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">2010-2011.</button>
+        </div>
+
+
+        <button onclick="window.location.href='https://www.exemplo.com'" class="button">Ir para a próxima fase</button>
+
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">9. Como El Niño afeta o clima global?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Não tem efeito.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Apenas resfria algumas regiões.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Alterando padrões de precipitação e temperatura.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Apenas aquece algumas regiões.</button>
+        </div>
+        <div class="question-wrapper" style="display:none;">
+            <div class="question">10. Qual é um sinal inicial de El Niño?</div>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Nevascas incomuns.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'correct', 'Easy')">Aquecimento anômalo das águas do Pacífico.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Aumento da atividade solar.</button>
+            <button class="option-button" onclick="checkAnswer(this, 'wrong', 'Easy')">Erupções vulcânicas.</button>
+        </div>
+        <div id="easyFeedback" class="feedback"></div>
+    </div>
+    
+  
+    
+    <script>
+        function openDifficulty(evt, difficultyName) {
+            var i, tabcontent, tablinks;
+    
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+    
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+    
+            document.getElementById(difficultyName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    
+        document.getElementsByClassName('tablinks')[0].click();
+    
+        function checkAnswer(button, correctness, difficulty) {
+            var feedback = document.getElementById(difficulty.toLowerCase() + "Feedback");
+    
+            if (correctness === 'correct') {
+                feedback.textContent = "Correto!";
+                feedback.classList.remove("wrong");
+                feedback.classList.add("correct");
+    
+                var currentQuestion = button.parentNode;
+                var nextQuestion = currentQuestion.nextElementSibling;
+    
+                if (nextQuestion && nextQuestion.classList.contains('question-wrapper')) {
+                    currentQuestion.style.display = 'none';
+                    nextQuestion.style.display = 'block';
+                } else {
+                    feedback.textContent = "Você completou as perguntas, vá para a proxima fase " + difficulty + "!";
+                }
+            } else {
+                feedback.textContent = "Errado!";
+                feedback.classList.remove("correct");
+                feedback.classList.add("wrong");
+            }
+    
+            feedback.style.display = "block";
+        }
+    </script>
+    
+    
+
+  <!-- Botão -->
+  
+
+
+
+
+</body>
+</html>
